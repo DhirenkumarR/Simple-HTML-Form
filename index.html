@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CUSTOMER PREDICTION</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+			<div class="heading-section ">
+				<div  class="text-center heading container">
+					<h2>Customer Prediction</h2>
+					<hr>
+					<p class=""><strong>-Based on the given features below, we can predict that whether the customer will leave the bank (closed his account) or he continues to be a customer.</strong></p>
+				</div>
+			</div>
+			
+			<div class="main-contant ">
+				<form method="post" action="/predict" class="container form-container">
+					<table class="tbl-30">
+						<tr>
+							<td><label id="cs">Credit Score : </label></td>
+							<td><input type="text" name="cs" id="cs"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><p class="highlight">Note: Credit Score must be between 350 and 850</p></td>
+						</tr>
+						<tr>
+							<td><label id="age">Age : </label></td>
+							<td><input type="number" name="age" id="age" max="92" min="18"></td>
+						</tr>
+						<tr>
+							<td><label id="tensure">Tensure : </label></td>
+							<td><input type="number" name="tensure" id="tensure" min="0" max="10"></td>
+						</tr>
+						<tr>
+							<td><label id="balance">Balance : </label></td>
+							<td><input type="text" name="balance" id="balance"></td>
+						</tr>
+						<tr>
+							<td><label id="nop">No of products: </label></td>
+							<td><input type="number" name="nop" id="nop" min="1" max="4"></td>
+						</tr>
+						<tr>
+							<td><label id="cc">Does he/she have credit card?</label></td>
+							<td>
+								<input type="radio" id="yes" name="cc" value="1">
+								<label for="yes">Yes</label>
+  								<input type="radio" id="no" name="cc" value="0">
+  								<label for="no">no</label>
+							</td>
+						</tr>
+						<tr>
+							<td><label id="am">Is he/she a active member of bank?</label></td>
+							<td>
+								<input type="radio" id="yes" name="am" value="1">
+  								<label for="yes">Yes</label>
+  								<input type="radio" id="no" name="am" value="0">
+  								<label for="no">no</label>
+							</td>
+						</tr>
+						<tr>
+							<td><label id="sal">Estimated Salary : </label></td>
+							<td><input type="text" name="sal" id="sal"></td>
+						</tr>
+						<tr>
+							<td><label id="resident"> Resident : </label></td>
+							<td>
+								<input type="radio" id="france" name="resident" value="France">
+						  		<label for="france">France</label>
+						  		<input type="radio" id="Spain" name="resident" value="Spain">
+						  		<label for="france">Spain</label>
+						  		<input type="radio" id="Germany" name="resident" value="Germany">
+						  		<label for="france">Germany</label>
+	  						</td>
+						</tr>
+						<tr>
+							<td><label id="gender"> Gender : </label></td>
+							<td>
+								<input type="radio" id="male" name="gender" value="Male">
+  								<label for="male">Male</label>
+  								<input type="radio" id="female" name="gender" value="Female">
+  								<label for="female">Female</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="submit" value="predict" class="btn-primary">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			
+			<div class="footer text-center">
+				<h2>All Rights Reserved. Created By <a href="#">Dhirenkumar Rathod</a></h2>
+			</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	</body>
+</html>

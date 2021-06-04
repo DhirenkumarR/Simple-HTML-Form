@@ -1,0 +1,51 @@
+.heading-section{
+	background-color: #70a1ff;
+}
+.heading
+{
+	padding: 2%;
+}
+.container
+{
+	margin: 0 auto;
+	width: 80%;
+}
+h2{
+	margin: 0 auto 2% auto;
+}
+.tbl-30{
+	width: 30%;
+}
+.main-contant{
+	margin: 5% 0;
+	
+}
+.form-container{
+	background-color: #dfe4ea;
+}
+.btn-primary{
+	background-color: #5352ed;
+	color: white;
+	border-radius: 10px;
+}
+.btn-primary:hover{
+	background-color: #3742fa;
+	border-radius: 10px;
+}
+.highlight{
+	background-color: yellow;
+	color: red;
+	font-size: small;
+}
+table tr td{
+	padding: 2%;
+	margin: 2% 0;
+}
+.footer h2
+{
+	font-size: 1rem;
+}
+.footer{
+	background-color: #70a1ff;
+	padding: 2%;
+}
